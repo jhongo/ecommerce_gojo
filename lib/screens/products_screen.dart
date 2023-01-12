@@ -1,4 +1,5 @@
 import 'package:app_ecommerce/components/products_components/drawer_avatar_component.dart';
+import 'package:app_ecommerce/components/products_components/search_filter_component.dart';
 import 'package:flutter/material.dart';
 
 class ProductsScreen extends StatelessWidget {
@@ -13,7 +14,9 @@ class ProductsScreen extends StatelessWidget {
         child: Column(
           children:const [
             DrawerAvatar(),
-            
+            SizedBox(height: 30,),
+            SearchFilter()
+
           ],
         ),
       )
