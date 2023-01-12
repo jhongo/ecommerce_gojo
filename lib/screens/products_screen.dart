@@ -1,3 +1,4 @@
+import 'package:app_ecommerce/components/products_components/drawer_avatar_component.dart';
 import 'package:flutter/material.dart';
 
 class ProductsScreen extends StatelessWidget {
@@ -6,11 +7,16 @@ class ProductsScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       backgroundColor: Colors.white54,
-      body: Center(
-         child: Text('ProductsScreen'),
-      ),
+      body: SafeArea(
+        child: Column(
+          children:const [
+            DrawerAvatar(),
+            
+          ],
+        ),
+      )
     );
   }
 }
