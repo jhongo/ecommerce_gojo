@@ -14,8 +14,8 @@ class DrawerAvatar extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            width: 50,
-            height: 50,
+            width: 40,
+            height: 40,
             alignment: Alignment.center,
             decoration: const BoxDecoration(
             color: Colors.black,
@@ -31,14 +31,14 @@ class DrawerAvatar extends StatelessWidget {
                   width: 50,
                   height: 50,
                   alignment: Alignment.center,
-                  child:const FaIcon(FontAwesomeIcons.list, color: Colors.white,),
+                  child:const FaIcon(FontAwesomeIcons.list, color: Colors.white,size: 16, ),
                 ),
               ),
             ),
           ),
           const Spacer(),
           const CircleAvatar(
-            radius: 25,
+            radius: 20,
             backgroundColor: Colors.black,
             child: FaIcon(FontAwesomeIcons.userAstronaut, color: Colors.white,),
           )

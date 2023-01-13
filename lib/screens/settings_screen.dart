@@ -38,32 +38,36 @@ class CustomNavBar extends StatelessWidget {
       child: GNav(
         selectedIndex: context.read<NavBarService>().optGet ,
         onTabChange: (value) => context.read<NavBarService>().opcSet = value,
-        gap: 15,
+        gap: 10,
         activeColor: Colors.white,
         tabMargin:const EdgeInsets.symmetric(horizontal: 7, vertical: 15),
         color: Colors.black,
         tabBackgroundColor: Colors.black,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        padding:const EdgeInsets.only(bottom: 15, top: 15, right: 15, left: 15 ),
+        padding:const EdgeInsets.only(bottom: 12, top: 12, right: 15, left: 15 ),
         textStyle:const TextStyle(
-          fontSize: 18,
+          fontSize: 14,
           color: Colors.white,
-          fontWeight: FontWeight.w700
+          fontWeight: FontWeight.w500,
+          
         ),
         tabs:const [
           GButton(
             icon: FontAwesomeIcons.house,
             text: 'Inicio',
+            iconSize: 16,
             
             ),
           GButton(
             icon: FontAwesomeIcons.shop,
             text: 'Tienda', 
+            iconSize: 16,
             
             ),
           GButton(
             icon: FontAwesomeIcons.user,
             text: 'Perfil',
+            iconSize: 16,
             
             ),
         ]),
